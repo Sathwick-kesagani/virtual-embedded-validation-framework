@@ -1,4 +1,5 @@
 # Virtual Embedded Device Validation Framework
+[![Embedded Validation Tests](https://github.com/Sathwick-kesagani/virtual-embedded-validation-framework/actions/workflows/validation.yml/badge.svg)](https://github.com/Sathwick-kesagani/virtual-embedded-validation-framework/actions/workflows/validation.yml)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Tests](https://img.shields.io/badge/Automated_Tests-10-brightgreen)
