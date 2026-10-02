@@ -1,0 +1,11 @@
+Test ID,Test Name,Result,Details
+TC-001,Communication ping,PASS,"Response: {'timestamp': '2026-10-02T13:38:21.787618+00:00', 'device_id': 'VED-001', 'command': 'PING', 'status': 'OK', 'message': 'PONG'}"
+TC-002,Device information,PASS,"Response: {'timestamp': '2026-10-02T13:38:21.787776+00:00', 'device_id': 'VED-001', 'command': 'DEVICE_INFO', 'status': 'OK', 'firmware_version': '1.0.0', 'simulator': True}"
+TC-003,Set and read GPIO high,PASS,"Set: {'timestamp': '2026-10-02T13:38:21.787789+00:00', 'device_id': 'VED-001', 'command': 'SET_GPIO', 'status': 'OK', 'gpio_state': 1}; Read: {'timestamp': '2026-10-02T13:38:21.787791+00:00', 'device_id': 'VED-001', 'command': 'READ_GPIO', 'status': 'OK', 'gpio_state': 1}"
+TC-004,Set and read GPIO low,PASS,"Set: {'timestamp': '2026-10-02T13:38:21.787800+00:00', 'device_id': 'VED-001', 'command': 'SET_GPIO', 'status': 'OK', 'gpio_state': 0}; Read: {'timestamp': '2026-10-02T13:38:21.787802+00:00', 'device_id': 'VED-001', 'command': 'READ_GPIO', 'status': 'OK', 'gpio_state': 0}"
+TC-005,Reject invalid GPIO value,PASS,"Response: {'timestamp': '2026-10-02T13:38:21.787809+00:00', 'device_id': 'VED-001', 'command': 'SET_GPIO', 'status': 'ERROR', 'error': 'GPIO value must be 0 or 1'}"
+TC-006,Nominal sensor range,PASS,"Temperature=25.56 C, Supply voltage=3.253 V"
+TC-007,Disconnected sensor detection,PASS,"Response: {'timestamp': '2026-10-02T13:38:21.787834+00:00', 'device_id': 'VED-001', 'command': 'READ_SENSORS', 'status': 'ERROR', 'error': 'Sensor not detected'}"
+TC-008,Overtemperature fault detection,PASS,Injected temperature=95.0 C
+TC-009,Undervoltage fault detection,PASS,Injected supply voltage=2.7 V
+TC-010,Heartbeat counter,PASS,"First=1, Second=2"
